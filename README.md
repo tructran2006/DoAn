@@ -1,43 +1,34 @@
-# 🚀 Online Phone Selling System
+# 🌐 Social Network Project
+
+> *Kết nối mọi người, chia sẻ đam mê - Hệ thống Mạng xã hội hiện đại.*
 
 ---
 
-## 🛠️ Công Nghệ Sử Dụng
-* **Ngôn ngữ:** C# (Backend) & Kotlin (Android)
-* **Backend:** Firebase (Realtime Database, Authentication)
-* **Kiến trúc:** MVVM Pattern
-* **Công cụ:** Visual Studio 2022, StarUML, Git
+## 🛠️ Kiến trúc hệ thống
+Dự án áp dụng mô hình **MVC (Model-View-Controller)** nhằm tối ưu hóa hiệu năng và khả năng bảo trì:
+* **Model:** Định nghĩa các thực thể dữ liệu (`User`, `Post`, `Comment`, `Friendship`) và tầng Firebase Service để tương tác với Realtime Database & Firestore.
+* **View:** Giao diện người dùng tương tác, cập nhật dữ liệu trực tiếp theo thời gian thực.
+* **Controller:** Quản lý luồng xử lý từ xác thực tài khoản, đăng bài, kết bạn cho đến xử lý tương tác thông qua SignalR.
 
 ---
 
-## ⚙️ Hướng Dẫn Cấu Hình Firebase
-Dự án sử dụng file `key.json` để kết nối Firebase. Để bảo mật, file này không được phép đẩy lên GitHub.
+## 💡 Hệ thống tính năng
 
-1. **Clone dự án:** `git clone https://github.com/tructran2006/DoAn.git`
-2. **Cấp quyền:** Đảm bảo email của bạn đã được Leader thêm vào Firebase Console.
-3. **Tạo Key mới:** 
-   - Truy cập **Firebase Console** > **Project Settings** > **Service accounts**.
-   - Nhấn **"Générer une nouvelle clé privée"**.
-   - Tải file về, đặt tên là `key.json` và bỏ vào thư mục `DoAn/`.
+### Nhóm Cốt lõi
+* **Posts:** Đăng bài (text/image), hiển thị News Feed, chỉnh sửa/xóa bài viết cá nhân.
+* **Comments:** Hệ thống bình luận nhúng, hiển thị thời gian thực và quản lý bình luận cá nhân.
+* **Friends:** Quản lý kết nối qua trạng thái (Pending/Accepted), danh sách bạn bè và hủy kết nối.
 
-> ⚠️ **LƯU Ý:** Không đẩy `key.json` lên GitHub. Hệ thống đã có `.gitignore` để chặn file này.
-
----
-
-## 💡 Cốt Lõi Dự Án
-* **Hệ thống xử lý đơn hàng:** Quy trình mua hàng tự động hóa với logic chặt chẽ.
-* **Quản trị nhân sự:** Tích hợp quản lý file nhân viên và chấm công.
-* **Thuật toán tối ưu:** Sử dụng C# để triển khai các thuật toán đồ thị như **Dijkstra, Floyd-Warshall, Prim, Kruskal** phục vụ phân tích dữ liệu.
+### Nhóm Bổ sung
+* **Authentication:** Đăng ký, Đăng nhập (Firebase Auth), Quản lý Profile (Avatar/Bio).
+* **Interactions:** Like/Unlike, Share bài viết.
+* **Real-time Notifications:** Thông báo tức thời khi có tương tác (SignalR).
+* **Search:** Tìm kiếm bạn bè theo tên hoặc email.
 
 ---
 
-## 📈 Hướng Phát Triển
-* [ ] **Tích hợp AI:** Sử dụng Vbee AIVoice để hỗ trợ khách hàng tự động.
-* [ ] **Mobile App:** Phát triển phiên bản Android dùng Jetpack Compose & Room Database.
-* [ ] **Data Analysis:** Mở rộng các mô hình phân tích dữ liệu nâng cao trên hệ thống.
-
----
-
-## 👥 Nhóm Phát Triển - W06-15
-* 🏫 **Đơn vị:** HUFLIT - Khoa Công nghệ thông tin
-* 👤 **Thành viên:** [Tên của bạn và các bạn trong nhóm]
+## 🚀 Hướng phát triển
+1. **AI Recommendation:** Xây dựng hệ thống gợi ý bạn bè thông minh dựa trên thuật toán đồ thị.
+2. **Multimedia & Storage:** Tối ưu hóa lưu trữ ảnh và video thông qua Firebase Storage.
+3. **Chat System:** Xây dựng khung chat trực tuyến thời gian thực.
+4. **AI Assistant:** Tích hợp Vbee AIVoice để điều khiển giao diện bằng giọng nói.
