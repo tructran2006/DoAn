@@ -12,8 +12,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Data\" />
-	  <Folder Include="Views\Auth\" />
+	  <Folder Include="Areas\Admin\Models\" />
+	  <Folder Include="Areas\Admin\Views\" />
+	  <Folder Include="wwwroot\images\" />
+	  <Folder Include="wwwroot\uploads\avatars\" />
+	  <Folder Include="wwwroot\uploads\covers\" />
+	  <Folder Include="wwwroot\uploads\messages\" />
+	  <Folder Include="wwwroot\uploads\posts\" />
 	</ItemGroup>
 
 </Project>
