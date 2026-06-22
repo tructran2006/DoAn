@@ -11,4 +11,9 @@
 		<PackageReference Include="Google.Cloud.Firestore" Version="3.8.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Data\" />
+	  <Folder Include="Views\Auth\" />
+	</ItemGroup>
+
 </Project>
