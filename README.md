@@ -1,54 +1,43 @@
-Chào bạn, một file README.md chuyên nghiệp là "bộ mặt" của đồ án. Đây là cấu trúc mẫu tối ưu cho dự án của bạn (Nhóm W06-15), được thiết kế để vừa đẹp mắt, vừa giúp bạn của bạn dễ dàng cài đặt mà không vi phạm bảo mật.
+# 🚀 Online Phone Selling System
 
-Bạn hãy copy đoạn này vào file README.md ở thư mục gốc dự án nhé:
+---
 
-🚀 Tên Đồ Án Của Bạn (VD: Online Phone Selling System)
-Chào mừng đến với hệ thống quản lý dự án của Nhóm W06-15. Dự án này được phát triển với mục tiêu [Mô tả mục tiêu ngắn gọn, ví dụ: tối ưu hóa quy trình bán hàng điện thoại].
+## 🛠️ Công Nghệ Sử Dụng
+* **Ngôn ngữ:** C# (Backend) & Kotlin (Android)
+* **Backend:** Firebase (Realtime Database, Authentication)
+* **Kiến trúc:** MVVM Pattern
+* **Công cụ:** Visual Studio 2022, StarUML, Git
 
-🛠️ Công Nghệ Sử Dụng
-Ngôn ngữ: C# / Kotlin
+---
 
-Backend: Firebase (Realtime Database, Authentication)
+## ⚙️ Hướng Dẫn Cấu Hình Firebase
+Dự án sử dụng file `key.json` để kết nối Firebase. Để bảo mật, file này không được phép đẩy lên GitHub.
 
-Architecture: MVVM Pattern
+1. **Clone dự án:** `git clone https://github.com/tructran2006/DoAn.git`
+2. **Cấp quyền:** Đảm bảo email của bạn đã được Leader thêm vào Firebase Console.
+3. **Tạo Key mới:** 
+   - Truy cập **Firebase Console** > **Project Settings** > **Service accounts**.
+   - Nhấn **"Générer une nouvelle clé privée"**.
+   - Tải file về, đặt tên là `key.json` và bỏ vào thư mục `DoAn/`.
 
-Tools: Visual Studio 2022, StarUML, Git
+> ⚠️ **LƯU Ý:** Không đẩy `key.json` lên GitHub. Hệ thống đã có `.gitignore` để chặn file này.
 
-⚙️ Hướng Dẫn Cài Đặt (Dành cho thành viên nhóm)
-Để chạy dự án này, bạn cần cấu hình Firebase cá nhân để đảm bảo tính bảo mật:
+---
 
-Clone dự án: git clone [https://github.com/tructran2006/DoAn.git](https://github.com/tructran2006/DoAn.git)
+## 💡 Cốt Lõi Dự Án
+* **Hệ thống xử lý đơn hàng:** Quy trình mua hàng tự động hóa với logic chặt chẽ.
+* **Quản trị nhân sự:** Tích hợp quản lý file nhân viên và chấm công.
+* **Thuật toán tối ưu:** Sử dụng C# để triển khai các thuật toán đồ thị như **Dijkstra, Floyd-Warshall, Prim, Kruskal** phục vụ phân tích dữ liệu.
 
-Quyền truy cập: Đảm bảo email của bạn đã được Leader thêm vào Firebase Console (mục Users and Permissions).
+---
 
-Cấu hình Key:
+## 📈 Hướng Phát Triển
+* [ ] **Tích hợp AI:** Sử dụng Vbee AIVoice để hỗ trợ khách hàng tự động.
+* [ ] **Mobile App:** Phát triển phiên bản Android dùng Jetpack Compose & Room Database.
+* [ ] **Data Analysis:** Mở rộng các mô hình phân tích dữ liệu nâng cao trên hệ thống.
 
-Truy cập Firebase Console.
+---
 
-Vào Project Settings > Service accounts.
-
-Nhấn "Générer une nouvelle clé privée".
-
-Tải file về, đổi tên thành key.json.
-
-Di chuyển file vào thư mục: DoAn/key.json.
-
-Build & Run: Mở file .sln bằng Visual Studio và bắt đầu chạy!
-
-⚠️ LƯU Ý BẢO MẬT: Không bao giờ đẩy file key.json lên GitHub. File này đã được thêm vào .gitignore để bảo vệ cơ sở dữ liệu của chúng ta.
-
-💡 Cốt Lõi Dự Án
-Quản lý người dùng: Đăng ký, đăng nhập bảo mật qua Firebase.
-
-Xử lý dữ liệu: Sử dụng C# để thực hiện các thuật toán [Dijkstra/DFS/BFS - Điền thuật toán bạn dùng] phục vụ việc [tối ưu hóa/phân tích].
-
-Phân tích hệ thống: Được thiết kế bài bản với các biểu đồ UML (Use Case, Sequence, ERD) thông qua StarUML.
-
-📈 Hướng Phát Triển
-[ ] Tích hợp AI: Sử dụng Vbee AIVoice để hỗ trợ phản hồi khách hàng tự động.
-
-[ ] Cloud Storage: Mở rộng lưu trữ ảnh điện thoại trên Firebase Storage.
-
-[ ] Mobile App: Phát triển thêm phiên bản Android bằng Kotlin & Jetpack Compose.
-
-[ ] Performance: Tối ưu hóa các truy vấn Database với Room Database.
+## 👥 Nhóm Phát Triển - W06-15
+* 🏫 **Đơn vị:** HUFLIT - Khoa Công nghệ thông tin
+* 👤 **Thành viên:** [Tên của bạn và các bạn trong nhóm]
